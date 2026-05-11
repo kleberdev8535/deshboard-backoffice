@@ -1,0 +1,107 @@
+:root {
+  font-family: Arial, sans-serif;
+  background: #f5f6fb;
+  color: #222;
+}
+
+body, html, #root {
+  min-height: 100%;
+  margin: 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.form-box,
+.chart-box,
+.table-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-box form {
+  display: grid;
+  gap: 14px;
+}
+
+.form-box label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+
+.form-box input,
+.form-box button {
+  border: 1px solid #dfe3ee;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.form-box button {
+  cursor: pointer;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+}
+
+.table-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-box th,
+.table-box td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ebedf2;
+  text-align: left;
+}
+
+.table-box th {
+  background: #f9fafb;
+}
+
+@media (max-width: 940px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
